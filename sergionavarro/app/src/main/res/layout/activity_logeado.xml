@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Logeado">
+
+    <ImageView
+        android:id="@+id/backgroundLogeado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="0.3" />
+
+    <ImageView
+        android:id="@+id/logoLogin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/booklogo"
+        app:layout_constraintTop_toBottomOf="@id/h500"
+        app:layout_constraintBottom_toTopOf="@id/h501"
+        app:layout_constraintStart_toEndOf="@id/v500"
+        app:layout_constraintEnd_toStartOf="@id/v501"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintHeight_percent="1" />
+
+    <TextView
+        android:id="@+id/appNameLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name_tiny"
+        app:layout_constraintTop_toBottomOf="@id/h502"
+        app:layout_constraintStart_toEndOf="@id/v500"
+        app:layout_constraintEnd_toStartOf="@id/v501"
+        style="@style/TinyAppNameStyle2" />
+
+    <TextView
+        android:id="@+id/appWelcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        app:layout_constraintTop_toBottomOf="@id/h503"
+        app:layout_constraintStart_toEndOf="@id/v500"
+        app:layout_constraintEnd_toStartOf="@id/v501"
+        style="@style/NormalText" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v501"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h501"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h502"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h503"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

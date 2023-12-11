@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Books\nForU</string>
+    <string name="app_name_tiny">BooksForU</string>
+    <string name="author_license">Sergio Navarro\n BooksForU ©</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="confirm_pass">Confirm password</string>
+    <string name="email">Email</string>
+    <string name="new_acc">Create account</string>
+    <string name="already_acc">Already have an account?</string>
+    <string name="welcome">Welcome to BooksForU</string>
+</resources>
